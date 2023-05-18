@@ -1,3 +1,6 @@
+from pathlib import Path
+
+
 def get_module_files(path: Path) -> list[Path]:
     """
     Recursively find all Python module files in the given path.

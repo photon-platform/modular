@@ -37,6 +37,7 @@ def create_module(module_name: str, description: str) -> None:
     # Create nested directories and __init__.py files
     current_dir = src_dir
     for part in module_parts:
+        # TODO: integrate jinja templates
         current_dir = current_dir / part
         current_dir.mkdir(exist_ok=True)
         init_file = current_dir / "__init__.py"

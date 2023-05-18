@@ -1,3 +1,6 @@
+from pathlib import Path
+
+
 def add_class_to_module() -> None:
     """
     Add a class definition to an existing module in the src directory.
@@ -28,7 +31,7 @@ def add_class_to_module() -> None:
     docstring_lines.append('"""')
     docstring = "\n".join(docstring_lines)
 
-    with module_file.open('a') as f:
+    with module_file.open("a") as f:
         f.write(f"\n{docstring}\n")
         f.write(f"class {class_name}")
         if inheritance:

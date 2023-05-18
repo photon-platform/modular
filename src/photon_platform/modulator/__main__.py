@@ -1,3 +1,8 @@
+from .create_module import create_module, prompt_user
+from .add_class import add_class_to_module
+from .add_function import add_function_to_module
+
+
 def main() -> None:
     """
     The main function of the script, which prompts the user and creates the module, adds a function, or adds a class.
@@ -16,3 +21,7 @@ def main() -> None:
         add_class_to_module()
     else:
         print("Invalid choice.")
+
+
+if __name__ == "__main__":
+    main()
